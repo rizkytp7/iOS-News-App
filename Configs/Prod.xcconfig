@@ -1,0 +1,17 @@
+// Prod.xcconfig — konfigurasi untuk environment Production (Release)
+// Di-include oleh project.yml untuk config "Release"
+
+#include "Secrets.xcconfig"
+
+// --- Identitas app ---
+APP_BUNDLE_ID    = com.codenews.CodeNewsIOS
+APP_DISPLAY_NAME = Code News
+
+// --- Build flags ---
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE
+OTHER_SWIFT_FLAGS                   =
+
+// --- Optimasi ---
+SWIFT_OPTIMIZATION_LEVEL            = -O
+GCC_OPTIMIZATION_LEVEL              = s
+ENABLE_TESTABILITY                  = NO

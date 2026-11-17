@@ -1,0 +1,17 @@
+// Dev.xcconfig — konfigurasi untuk environment Development (Debug)
+// Di-include oleh project.yml untuk config "Debug"
+
+#include "Secrets.xcconfig"
+
+// --- Identitas app ---
+APP_BUNDLE_ID    = com.codenews.CodeNewsIOS.dev
+APP_DISPLAY_NAME = Code News Dev
+
+// --- Build flags ---
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG DEV
+OTHER_SWIFT_FLAGS                   = -DDEBUG
+
+// --- Optimasi ---
+SWIFT_OPTIMIZATION_LEVEL            = -Onone
+GCC_OPTIMIZATION_LEVEL              = 0
+ENABLE_TESTABILITY                  = YES
