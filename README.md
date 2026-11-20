@@ -2,6 +2,12 @@
 A modern native iOS News Reader application built with **SwiftUI**, **VIPER Architecture**, and **NewsAPI**.
 The application allows users to explore news categories, discover news sources, browse articles, search for news, and read the original article through an integrated WebView.
 
+how to run this app:
+- cd CodeNewsIOS/
+- chmod +x setup.sh
+- ./setup.sh
+- xcodegen generate --spec project.yml
+
 ---
 ## ✨ Features
 - 🗂️ Browse news categories
